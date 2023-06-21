@@ -131,7 +131,7 @@ public class DatabasePopulateService {
                 projectWorkerList.add(projectWorker);
             }
 
-            insertSt = conn.prepareStatement("INSERT INTO project_worker(project_id, worker_id() VALUES (?, ?)"
+            insertSt = conn.prepareStatement("INSERT INTO project_worker(project_id, worker_id) VALUES (?, ?)"
             );
             for (ProjectWorker projectWorker : projectWorkerList) {
                 insertSt.setLong(1, projectWorker.getProject_id());

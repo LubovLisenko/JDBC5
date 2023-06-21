@@ -16,6 +16,7 @@ public class Prefs {
     public static final String DEFAULT_PREFS_FILENAME = "Prefs.json";
     private Map<String, Object> prefs = new HashMap<>();
     public Prefs(){
+
         this (DEFAULT_PREFS_FILENAME);
     }
     public Prefs(String filename){
